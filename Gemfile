@@ -12,6 +12,15 @@ source 'https://rubygems.org'
  # #2
  group :development do
    gem 'sqlite3'
+   gem 'byebug'
+   gem 'spring'
+   gem 'shoulda'
+   gem 'faker'
+   gem 'factory_girl_rails'
+ end
+
+ group :development, :test do
+   gem 'rspec-rails', '~> 3.0'
  end
 
  # Use SCSS for stylesheets
@@ -23,3 +32,12 @@ source 'https://rubygems.org'
  # Use jquery as the JavaScript library
  gem 'jquery-rails'
  # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+ gem 'turbolinks'
+ # Bootstrap
+ gem 'bootstrap-sass'
+ # Figaro
+ gem 'figaro', '1.0'
+ # Pry
+ gem 'pry'
+ # Devise
+ gem 'devise'
