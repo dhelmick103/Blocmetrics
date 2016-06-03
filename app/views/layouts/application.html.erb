@@ -13,6 +13,7 @@
     <ul class="nav nav-tabs">
       <li><%= link_to "Home", welcome_index_path %></li>
       <li><%= link_to "About", welcome_about_path %></li>
+      <li><%= link_to "Registered Applications", registered_applications_path %></li>
       <div class="pull-right" style="padding-top: 9px;">
         <% if user_signed_in? %>
           Signed in as: <strong><%= current_user.email %></strong> |

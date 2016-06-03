@@ -1,0 +1,26 @@
+<h1>Edit Application</h1>
+
+<div class="row">
+  <div class="col-md-4">
+    <p>Form to add a new application</p>
+    <ul>
+      <li>Enter your application's name</li>
+      <li>Enter a valid URL for your applciation</li>
+    </ul>
+  </div>
+  <div class="col-md-8">
+    <%= form_for @registered_application do |f| %>
+      <div class="form-group">
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+      </div>
+      <div class="form-group">
+        <%= f.label :url %>
+        <%= f.text_field :url %>
+      </div>
+      <div class="form-group">
+        <%= f.submit "Save", class: 'btn btn-success' %>
+      </div>
+    <% end %>
+  </div>
+</div>
