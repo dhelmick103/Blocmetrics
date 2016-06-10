@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   resources :registered_applications
 
+  resources :events
+
   get 'welcome/index'
 
   get 'welcome/about'
