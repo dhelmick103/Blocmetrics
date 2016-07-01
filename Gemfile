@@ -41,3 +41,7 @@ source 'https://rubygems.org'
  gem 'pry'
  # Devise
  gem 'devise'
+ # Chartkick
+ gem 'chartkick'
+ # Groupdate
+ gem 'groupdate'
